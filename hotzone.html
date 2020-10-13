@@ -1,0 +1,1035 @@
+<!-- stylesheets -->
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<script src="https://kit.fontawesome.com/0ff19582bb.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover user-scalable=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style type="text/css">
+  @media(max-width: 767px) {
+    .mui-zebra-page {
+      background-size: contain !important;
+    }
+  }     
+    .div-img {
+        width: 50% !important;
+    }
+
+    .div-contents {
+        margin-right: auto !important;
+        margin-left: auto !important;
+        margin-top: -7% !important;
+    }
+
+    .lzd-act-richtext a {
+        color: #000 !important;
+        text-decoration: none !important;
+        font-weight: 600 !important;
+    }
+
+    .div-wrap {
+        display: none !important;
+    }
+
+    .lzd-act-richtext img {
+        position: relative !important;
+        top: 0% !important;
+        border-radius: 100% !important;
+        border: 2px solid #e1e1e1 !important;
+        margin-bottom: 3px !important;
+    }
+
+    .div-list-main {
+        padding-left: 20px !important;
+        padding-right: 0 !important;
+        list-style: none !important;
+        margin-left: -15% !important;
+        line-height: 1.5 !important;
+        cursor: pointer !important;
+        font-size: 10px !important;
+        font-family: 'Montserrat', sans-serif !important;
+    }
+
+    .main-listing-img {
+        border-radius: 50px !important;
+        margin-right: 7.5px !important;
+        box-shadow: rgba(0, 0, 0, 0.11) 0px 0.96px 4.8px 0px !important;
+        float: left !important;
+        width: 40px !important;
+    }
+
+    .main-listing-img-right {
+        border-radius: 50px !important;
+        margin-right: 7.5px !important;
+        box-shadow: rgba(0, 0, 0, 0.11) 0px 0.96px 4.8px 0px !important;
+        float: right!important;
+        width: 40px !important;
+    }
+
+    .sub-listing-img{
+        border-radius: 50px !important;
+        margin-right: 7.5px !important;
+        box-shadow: rgba(0, 0, 0, 0.11) 0px 0.96px 4.8px 0px !important;
+        float: left !important;
+        width: 100% !important;
+    }
+    .list-group-item-action:active {
+        background: #f9f9f9;
+    }
+
+    .list-group-item-action {
+        font-weight: 500;
+    }
+
+    .list-group-item {
+        padding: 2.75rem 1.25rem 2.75rem .5rem !important;
+    }
+
+    .cat-one{
+        background-color: #d3e2bd;
+        border: 1px solid white;
+    }
+    .cat-two{
+        background-color: #d3e2e0;
+        border: 1px solid white;
+    }
+    .cat-three{
+        background-color: #d2bfbd;
+        border: 1px solid white;
+    }
+    .cat-four{
+        background-color: #bae1bd;
+        border: 1px solid white;
+    }
+    .cat-five{
+        background-color: #f0e4be;
+        border: 1px solid white;
+    }
+    .cat-six{
+        background-color: #e0e2ff;
+        border: 1px solid white;
+    }
+
+    .pull-left{
+        margin-left: 5px;
+    }
+    .pull-right{
+        margin-right: 20px;
+    }
+
+
+    .list-group{
+        padding: 0px!important;
+    }
+    #category1 {
+        transition-duration: 2s;
+        transition-delay: 2s;
+        transition-timing-function: linear;
+        -webkit-transition-duration: 2s;
+        -webkit-transition-delay: 2s;
+        -webkit-transition-timing-function:
+    }
+
+    .full-width {
+        width: 100% !important;
+    }
+
+    .cat-hr {
+        border: 0.5px solid #d8d8d8;
+        margin-top: -1rem !important;
+        margin-bottom: 0rem !important;
+    }
+
+    .df-main-div {
+        position: absolute !important;
+    }
+
+    .lzd-act-richtext ol,
+    .lzd-act-richtext ul {
+        padding-left: 18px !important;
+        padding-right: 0 !important;
+    }
+
+    .hr-margin {
+        margin-bottom: 2rem;
+    }
+
+    .lzd-act-richtext h6 {
+        margin: 0 !important;
+        font-weight: 500 !important;
+    }
+
+    @media (min-width: 375px) and (max-width: 1200px) {
+        .div-df {
+            position: fixed !important;
+            left: 0;
+            bottom: -7% !important;
+            width: 100%;
+            background-color: #e1e1e1 !important;
+            color: #000;
+            text-align: center;
+            padding: 2% 0 !important;
+            z-index: 999 !important;
+            margin: -4% 0 !important;
+            height: 135px !important;
+        }
+    }
+
+    .div-df {
+        position: fixed !important;
+        left: 0;
+        bottom: -10.5%;
+        width: 100%;
+        background-color: #e1e1e1;
+        color: #000 !important;
+        text-align: center;
+        padding: 2% 0 !important;
+        z-index: 999 !important;
+        margin: -4% 0 !important;
+        height: 135px !important;
+    }
+    .mxt-60{
+        margin-top: 100px;
+    }
+    h5 {
+        font-weight: 600;
+     }
+    .main-cat-img{
+        width: 25%;
+    }
+    #drag{
+        right: 0;
+        top: 8%;
+        
+    }
+    #draggable { 
+  cursor:move;
+  height: 150px;
+  padding: 1em;
+  width: 300px;
+  text-align:center;
+}
+    @media(min-width: 768px) {
+        .desk-no {
+            display: none !important;
+        }
+        #category1 {
+            display: none !important;
+        }
+    }
+</style>
+<div id="category1" style="position: fixed !important; z-index: 999 !important;background: #f9f9f9 !important; top:0;left:0;height: 100% !important;overflow-y: scroll !important; width: 100% !important;font-family: 'Montserrat', sans-serif !important;">
+    <div class="col-xs-5 list-group" style="height: 100%; overflow: scroll;">
+        <ul class="div-list-main">
+            <li class="main-listing list-group-item list-group-item-action" style="border: none;"><span></span></li>
+            <li class="main-listing list-group-item list-group-item-action" style="background-color: #d3e2bd" id="firstlist" onclick="firstCatOpen()">
+                <img class="main-listing-img" src="https://gw.alicdn.com/tfs/TB1pUsQbUz1gK0jSZLeXXb9kVXa-300-300.jpg" style="width: 24px;margin-top: -8%;">
+                <span>Mega Deals</span>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action" style="background-color: #d3e2e0" id="secondlist" onclick="secondCatOpen()">
+                <img class="main-listing-img" src="https://gw.alicdn.com/tfs/TB1uWgRbQP2gK0jSZPxXXacQpXa-300-300.jpg" style="width: 24px;margin-top: -12px;">
+                <span>Category Exclusives</span>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action" style="background-color: #d2bfbd" id="thirdlist" onclick="thirdCatOpen()">
+                <img class="main-listing-img" src="https://gw.alicdn.com/tfs/TB1IGETbQT2gK0jSZFkXXcIQFXa-300-300.jpg" style="width: 24px;margin-top: -10px;">
+                <span>Offers You Can't Miss</span>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action" style="background-color: #bae1bd;" id="fourthlist" onclick="fourthCatOpen()">
+                <img class="main-listing-img" src="https://gw.alicdn.com/tfs/TB17bERbNz1gK0jSZSgXXavwpXa-300-300.jpg" style="width: 24px;margin-top: -10px;">
+                <span>We Care of Your Savings</span>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action" style="background-color: #f0e4be;" id="fifthlist" onclick="fifthCatOpen()">
+                <img class="main-listing-img" src="https://gw.alicdn.com/tfs/TB1FbsRbSf2gK0jSZFPXXXsopXa-300-300.jpg" style="width: 24px;margin-top: -10px;">
+                <span>Hot Deals</span>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action" style="background-color: #e0e2ff;" id="sixthlist" onclick="sixthCatOpen()">
+                <img class="main-listing-img" src="https://gw.alicdn.com/tfs/TB1fUESbQT2gK0jSZPcXXcKkpXa-300-300.jpg" style="width: 24px;margin-top: -10px;">
+                <span>Top Selling</span>
+            </li>
+            <!--<li class="main-listing list-group-item list-group-item-action" id="seventhlist" onclick="seventhCatOpen()">
+                <img class="main-listing-img" src="https://gw.alicdn.com/tfs/TB1Z3.RbQY2gK0jSZFgXXc5OFXa-300-300.jpg" style="width: 24px;margin-top: -10px;">
+                <span>New Arrivals</span>
+            </li>-->
+            <!--<li class="main-listing list-group-item list-group-item-action" id="eightlist" onclick="eightCatOpen()">
+                <img class="main-listing-img" src="https://gw.alicdn.com/tfs/TB1dhwTbQH0gK0jSZPiXXavapXa-300-300.jpg" style="width: 24px;margin-top: -10px;">
+                <span>Bags</span>
+            </li>-->
+            
+        </ul>
+    </div>
+
+
+
+    <!--first Category -->
+    <div class="col-xs-7" id="firstcat" style="display: show; padding-left: 1px; padding-right: 0px;">
+
+        <div class="">
+            <br>
+            <span class="pull-left" style="font-size: 10px;cursor: pointer;font-weight:600 !important;">Mega Deals </span>
+            <a href="#">
+                <span class="pull-right" style="font-size: 10px;cursor: pointer;color: #3ec251 !important;font-weight:600;">&gt;&gt; See More</span>
+            </a>
+        </div>
+
+        <div class="col-xs-12" style="margin-bottom: -22.5px;">
+            <hr class="hr-margin">
+        </div>
+
+
+        <div class="col-xs-12" style="overflow-y: scroll !important; width: 100% !important;">
+            <ul class="div-list-main">
+            <li class="main-listing list-group-item list-group-item-action cat-one">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1RCgTbG61gK0jSZFlXXXDKFXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Phones & Accessories</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-one">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1vrIRbNz1gK0jSZSgXXavwpXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">TV, Audio, Cameras & Gaming</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-one">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1YyZTbUY1gK0jSZFCXXcwqXXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Home Appliances</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-one">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1C5wTbND1gK0jSZFKXXcJrVXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Computers, Laptops & Accessories</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-one">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1i_sRbO_1gK0jSZFqXXcpaXXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Men's Fashion</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-one">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1l3UObHH1gK0jSZFwXXc7aXXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Women's Fashion</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-one">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1uvEUbHj1gK0jSZFOXXc7GpXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Health & Beauty</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-one">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1Z3.RbQY2gK0jSZFgXXc5OFXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Sports & Fitness</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-one">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1wQETbHH1gK0jSZFwXXc7aXXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Home & Lifestyle</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-one">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1KU3SbQL0gK0jSZFxXXXWHVXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Music & Arts</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-one">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1l3UObHH1gK0jSZFwXXc7aXXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Automotive & Motorcycles</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-one">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1MmsLbUT1gK0jSZFhXXaAtVXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Baby, Kids & Toys</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-one">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1yOcJbFT7gK0jSZFpXXaTkpXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Digital Goods</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-one">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1vTMPbHr1gK0jSZR0XXbP8XXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Global Collection</h5>
+            </a>
+            </li>
+            </ul>
+        </div>
+        
+
+    </div>
+
+
+
+    <!--Second Category -->
+    <div class="col-xs-7 fixed" id="secondcat" style="display: none; padding-left: 1px; padding-right: 0px;">
+
+        <div class="">
+            <br>
+            <span class="pull-left" style="font-size: 10px;cursor: pointer;font-weight:600 !important;">Category Exclusives</span>
+            <a href="#">
+                <span class="pull-right" style="font-size: 10px;cursor: pointer;color: #3ec251 !important;font-weight:600;">&gt;&gt; See More</span>
+            </a>
+        </div>
+
+        <div class="col-xs-12" style="margin-bottom: -22.5px;">
+            <hr class="hr-margin">
+        </div>
+
+        <div class="col-xs-12" style="overflow-y: scroll !important; width: 100% !important;">
+            <ul class="div-list-main">
+            <li class="main-listing list-group-item list-group-item-action cat-two">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1RCgTbG61gK0jSZFlXXXDKFXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Phones & Accessories</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-two">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1vrIRbNz1gK0jSZSgXXavwpXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">TV, Audio, Cameras & Gaming</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-two">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1YyZTbUY1gK0jSZFCXXcwqXXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Home Appliances</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-two">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1C5wTbND1gK0jSZFKXXcJrVXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Computers, Laptops & Accessories</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-two">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1i_sRbO_1gK0jSZFqXXcpaXXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Men's Fashion</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-two">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1l3UObHH1gK0jSZFwXXc7aXXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Women's Fashion</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-two">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1uvEUbHj1gK0jSZFOXXc7GpXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Health & Beauty</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-two">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1Z3.RbQY2gK0jSZFgXXc5OFXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Sports & Fitness</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-two">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1wQETbHH1gK0jSZFwXXc7aXXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Home & Lifestyle</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-two">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1KU3SbQL0gK0jSZFxXXXWHVXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Music & Arts</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-two">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1l3UObHH1gK0jSZFwXXc7aXXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Automotive & Motorcycles</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-two">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1MmsLbUT1gK0jSZFhXXaAtVXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Baby, Kids & Toys</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-two">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1yOcJbFT7gK0jSZFpXXaTkpXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Digital Goods</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-two">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1vTMPbHr1gK0jSZR0XXbP8XXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Global Collection</h5>
+            </a>
+            </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!--third Category -->
+    <div class="col-xs-7 fixed" id="thirdcat" style="display: none; padding-left: 1px; padding-right: 0px;">
+
+        <div class="">
+            <br>
+            <span class="pull-left" style="font-size: 10px;cursor: pointer;font-weight:600 !important;">Offers You Can't Miss</span>
+            <a href="#">
+                <span class="pull-right" style="font-size: 10px;cursor: pointer;color: #3ec251 !important;font-weight:600;">&gt;&gt; See More</span>
+            </a>
+        </div>
+
+        <div class="col-xs-12" style="margin-bottom: -22.5px;">
+            <hr class="hr-margin">
+        </div>
+
+        <div class="col-xs-12" style="overflow-y: scroll !important; width: 100% !important;">
+            <ul class="div-list-main">
+            <li class="main-listing list-group-item list-group-item-action cat-three">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1RCgTbG61gK0jSZFlXXXDKFXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Wishlist Giveaways</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-three">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1vrIRbNz1gK0jSZSgXXavwpXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">App Visit Point</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-three">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1YyZTbUY1gK0jSZFCXXcwqXXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Mission 11.11</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-three">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1C5wTbND1gK0jSZFKXXcJrVXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Seller Free Shipping</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-three">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1i_sRbO_1gK0jSZFqXXcpaXXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">New User Additional Benefit</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-three">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1l3UObHH1gK0jSZFwXXc7aXXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Shake Shake</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-three">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1uvEUbHj1gK0jSZFOXXc7GpXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">DFG Gaming Week</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-three">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1Z3.RbQY2gK0jSZFgXXc5OFXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Happy Hour</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-three">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1wQETbHH1gK0jSZFwXXc7aXXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Guess & Get It Free</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-three">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1KU3SbQL0gK0jSZFxXXXWHVXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Spin the Wheel</h5>
+            </a>
+            </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <!--fourth Category -->
+    <div class="col-xs-7 fixed" id="fourthcat" style="display: none; padding-left: 1px; padding-right: 0px;">
+
+        <div class="">
+            <br>
+            <span class="pull-left" style="font-size: 10px;cursor: pointer;font-weight:600 !important;">We Care for your savings</span>
+            <a href="#">
+                <span class="pull-right" style="font-size: 10px;cursor: pointer;color: #3ec251 !important;font-weight:600;">&gt;&gt; See More</span>
+            </a>
+        </div>
+
+        <div class="col-xs-12">
+            <hr class="hr-margin">
+        </div>
+
+        <div class="col-xs-6">
+            <a href="#">
+                <img src="https://gw.alicdn.com/tfs/TB1srQRbUH1gK0jSZSyXXXtlpXa-300-300.jpg" class="center-block sub-listing-img" style="object-fit: contain; width: 100%;">
+            </a><br>
+            <h6 class="text-center mxt-60">BKash </h6>
+        </div>
+        <div class="col-xs-6">
+            <a href="#">
+                <img src="https://gw.alicdn.com/tfs/TB1NKkPbFY7gK0jSZKzXXaikpXa-300-300.jpg" class="center-block sub-listing-img" style="object-fit: contain; width: 100%;"><br>
+            </a>
+            <h6 class="text-center mxt-60">City Bank </h6>
+        </div>
+        <div class="col-xs-12">
+            <hr class="hr-margin">
+        </div>
+
+        <div class="col-xs-6">
+            <a href="#">
+                <img src="https://gw.alicdn.com/tfs/TB1Z3.RbQY2gK0jSZFgXXc5OFXa-300-300.jpg" class="center-block sub-listing-img" style="object-fit: contain; width: 100%;">
+            </a><br>
+            <h6 class="text-center mxt-60">DBBL </h6>
+        </div>
+        <div class="col-xs-6">
+            <a href="#">
+                <img src="https://gw.alicdn.com/tfs/TB1NWgNbQL0gK0jSZFAXXcA9pXa-300-300.jpg" class="center-block sub-listing-img" style="object-fit: contain; width: 100%;">
+            </a><br>
+            <h6 class="text-center mxt-60">SCB </h6>
+        </div>
+
+    </div>
+
+
+    <!--fifth Category -->
+    <div class="col-xs-7 fixed" id="fifthcat" style="display: none; padding-left: 1px; padding-right: 0px;">
+        <div class="">
+            <br>
+            <span class="pull-left" style="font-size: 10px;cursor: pointer;font-weight:600 !important;">Hot Deals</span>
+            <a href="#">
+                <span class="pull-right" style="font-size: 10px;cursor: pointer;color: #3ec251 !important;font-weight:600;">&gt;&gt; See More</span>
+            </a>
+        </div>
+
+        <div class="col-xs-12" style="margin-bottom: -22.5px;">
+            <hr class="hr-margin">
+        </div>
+
+        <div class="col-xs-12" style="overflow-y: scroll !important; width: 100% !important;">
+            <ul class="div-list-main">
+            <li class="main-listing list-group-item list-group-item-action cat-five">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1WbgQbUY1gK0jSZFMXXaWcVXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Deals Under 499</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-five">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1EAETbHH1gK0jSZFwXXc7aXXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Deals Under 999</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-five">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1kt.QbQT2gK0jSZPcXXcKkpXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Deals Under 1499</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-five">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB11u.PbHj1gK0jSZFOXXc7GpXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Buy 1 Get 1</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-five">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1pF.RbHH1gK0jSZFwXXc7aXXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Free Gifts</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-five">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1THENbNv1gK0jSZFFXXb0sXXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Combo Bundles</h5>
+            </a>
+            </li>
+            <li class="main-listing list-group-item list-group-item-action cat-five">
+                <a href="#">
+                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1zMZObHH1gK0jSZFwXXc7aXXa-300-300.jpg" style="width: 24px;">
+                <h5 class="">Quantity Bundles</h5>
+            </a>
+            </li>           
+            
+            </ul>
+        </div>
+    </div>
+
+
+    <!--Sixth Category -->
+    <div class="col-xs-7 fixed" id="sixthcat" style="display: none; padding-left: 1px; padding-right: 0px;">
+
+        <div class="">
+            <br>
+            <span class="pull-left" style="font-size: 10px;cursor: pointer;font-weight:600 !important;">Top Selling</span>
+            <a href="#">
+                <span class="pull-right" style="font-size: 10px;cursor: pointer;color: #3ec251 !important;font-weight:600;">&gt;&gt; See More</span>
+            </a>
+        </div>
+
+        <div class="col-xs-12">
+            <hr class="hr-margin">
+        </div>
+
+        <div class="col-xs-12" style="overflow-y: scroll !important; width: 100% !important;">
+            <div class="col-xs-6">
+            <a href="#">
+                <img src="https://gw.alicdn.com/tfs/TB1RCgTbG61gK0jSZFlXXXDKFXa-300-300.jpg" class="center-block sub-listing-img" style="object-fit: contain; width: 100%;">
+            </a><br>
+            <h6 class="text-center mxt-60">Phones & Accessories </h6>
+        </div>
+        <div class="col-xs-6">
+            <a href="#">
+                <img src="https://gw.alicdn.com/tfs/TB1vrIRbNz1gK0jSZSgXXavwpXa-300-300.jpg" class="center-block sub-listing-img" style="object-fit: contain; width: 100%;"><br>
+            </a>
+            <h6 class="text-center mxt-60">TV, Audio, Cameras & gaming</h6>
+        </div>
+        <div class="col-xs-12">
+            <hr class="hr-margin">
+        </div>
+
+        <div class="col-xs-6">
+            <a href="#">
+                <img src="https://gw.alicdn.com/tfs/TB1YyZTbUY1gK0jSZFCXXcwqXXa-300-300.jpg" class="center-block sub-listing-img" style="object-fit: contain; width: 100%;">
+            </a><br>
+            <h6 class="text-center mxt-60">Home Appliances</h6>
+        </div>
+        <div class="col-xs-6">
+            <a href="#">
+                <img src="https://gw.alicdn.com/tfs/TB1C5wTbND1gK0jSZFKXXcJrVXa-300-300.jpg" class="center-block sub-listing-img" style="object-fit: contain; width: 100%;">
+            </a><br>
+            <h6 class="text-center mxt-60">Computers, Laptops & Accessories</h6>
+        </div>
+        <div class="col-xs-12">
+            <hr class="hr-margin">
+        </div>
+
+        <div class="col-xs-6">
+            <a href="#">
+                <img src="https://gw.alicdn.com/tfs/TB1i_sRbO_1gK0jSZFqXXcpaXXa-300-300.jpg" class="center-block sub-listing-img" style="object-fit: contain; width: 100%;">
+            </a><br>
+            <h6 class="text-center mxt-60">Men's Fashion</h6>
+        </div>
+        <div class="col-xs-6">
+            <a href="#">
+                <img src="https://gw.alicdn.com/tfs/TB1l3UObHH1gK0jSZFwXXc7aXXa-300-300.jpg" class="center-block sub-listing-img" style="object-fit: contain; width: 100%;">
+            </a><br>
+            <h6 class="text-center mxt-60">Women's Fashion</h6>
+        </div>
+        <div class="col-xs-12">
+            <hr class="hr-margin">
+        </div>
+
+        <div class="col-xs-6">
+            <a href="#">
+                <img src="https://gw.alicdn.com/tfs/TB1uvEUbHj1gK0jSZFOXXc7GpXa-300-300.jpg" class="center-block sub-listing-img" style="object-fit: contain; width: 100%;">
+            </a><br>
+            <h6 class="text-center mxt-60">Health & Beauty</h6>
+        </div>
+        <div class="col-xs-6">
+            <a href="#">
+                <img src="https://gw.alicdn.com/tfs/TB1Z3.RbQY2gK0jSZFgXXc5OFXa-300-300.jpg" class="center-block sub-listing-img" style="object-fit: contain; width: 100%;">
+            </a><br>
+            <h6 class="text-center mxt-60">Sports & Fitness</h6>
+        </div>
+        <div class="col-xs-12">
+            <hr class="hr-margin">
+        </div>
+
+        <div class="col-xs-6">
+            <a href="#">
+                <img src="https://gw.alicdn.com/tfs/TB1wQETbHH1gK0jSZFwXXc7aXXa-300-300.jpg" class="center-block sub-listing-img" style="object-fit: contain; width: 100%;">
+            </a><br>
+            <h6 class="text-center mxt-60">Home & Lifestyle</h6>
+        </div>
+        <div class="col-xs-6">
+            <a href="#">
+                <img src="https://gw.alicdn.com/tfs/TB1KU3SbQL0gK0jSZFxXXXWHVXa-300-300.jpg" class="center-block sub-listing-img" style="object-fit: contain; width: 100%;">
+            </a><br>
+            <h6 class="text-center mxt-60">Music & Arts</h6>
+        </div>
+        <div class="col-xs-12">
+            <hr class="hr-margin">
+        </div>
+
+        <div class="col-xs-6">
+            <a href="#">
+                <img src="https://gw.alicdn.com/tfs/TB1l3UObHH1gK0jSZFwXXc7aXXa-300-300.jpg" class="center-block sub-listing-img" style="object-fit: contain; width: 100%;">
+            </a><br>
+            <h6 class="text-center mxt-60">Automotive & Motorcycles</h6>
+        </div>
+        <div class="col-xs-6">
+            <a href="#">
+                <img src="https://gw.alicdn.com/tfs/TB1MmsLbUT1gK0jSZFhXXaAtVXa-300-300.jpg" class="center-block sub-listing-img" style="object-fit: contain; width: 100%;">
+            </a><br>
+            <h6 class="text-center mxt-60">Baby, Kids & Toys</h6>
+        </div>
+        <div class="col-xs-12">
+            <hr class="hr-margin">
+        </div>
+
+        <div class="col-xs-6">
+            <a href="#">
+                <img src="https://gw.alicdn.com/tfs/TB1yOcJbFT7gK0jSZFpXXaTkpXa-300-300.jpg" class="center-block sub-listing-img" style="object-fit: contain; width: 100%;">
+            </a><br>
+            <h6 class="text-center mxt-60">Digital Goods</h6>
+        </div>
+        <div class="col-xs-6">
+            <a href="#">
+                <img src="https://gw.alicdn.com/tfs/TB1vTMPbHr1gK0jSZR0XXbP8XXa-300-300.jpg" class="center-block sub-listing-img" style="object-fit: contain; width: 100%;">
+            </a><br>
+            <h6 class="text-center mxt-60">Global Collection</h6>
+        </div>
+
+        </div>
+    </div>
+
+
+    <!--Seven Category -->
+    <!--<div class="col-xs-7 fixed" id="seventhcat" style="display: none;padding-left: 0px;">
+
+        <div class="">
+            <br>
+            <span class="pull-left" style="font-size: 10px;cursor: pointer;font-weight:600 !important;">Watches</span>
+            <a href="#">
+                <span class="pull-right" style="font-size: 10px;cursor: pointer;color: #3ec251 !important;font-weight:600;">&gt;&gt; See More</span>
+            </a>
+        </div>
+
+        <div class="col-xs-12">
+            <hr class="hr-margin">
+        </div>
+
+        <div class="col-xs-6">
+            <a href="#">
+                <img src="https://gw.alicdn.com/tfs/TB1EAETbHH1gK0jSZFwXXc7aXXa-300-300.jpg" class="center-block sub-listing-img" style="object-fit: contain; width: 100%;">
+            </a><br>
+            <h6 class="text-center mxt-60">Watches Under 999</h6>
+        </div>
+        <div class="col-xs-6">
+            <a href="#">
+                <img src="https://gw.alicdn.com/tfs/TB1bKsRbSf2gK0jSZFPXXXsopXa-300-300.jpg" class="center-block sub-listing-img" style="object-fit: contain; width: 100%;"><br>
+            </a>
+            <h6 class="text-center mxt-60">Watches Under 2999 </h6>
+        </div>
+        <div class="col-xs-12">
+            <hr class="hr-margin">
+        </div>
+
+        <div class="col-xs-6">
+            <a href="#">
+                <img src="https://gw.alicdn.com/tfs/TB1Z3.RbQY2gK0jSZFgXXc5OFXa-300-300.jpg" class="center-block sub-listing-img" style="object-fit: contain; width: 100%;">
+            </a><br>
+            <h6 class="text-center mxt-60">Premium watches </h6>
+        </div>
+
+    </div>-->
+
+
+    <!--Eight Category -->
+    <!--<div class="col-xs-7 fixed" id="eightcat" style="display: none;padding-left: 0px;">
+        <div class="">
+            <br>
+            <span class="pull-left" style="font-size: 10px;cursor: pointer;font-weight:600 !important;">Bags</span>
+            <a href="#">
+                <span class="pull-right" style="font-size: 10px;cursor: pointer;color: #3ec251 !important;font-weight:600;">&gt;&gt; See More</span>
+            </a>
+        </div>
+        <div class="col-xs-12">
+            <hr class="hr-margin">
+        </div>
+
+        <div class="col-xs-6">
+            <a href="#">
+                <img src="https://gw.alicdn.com/tfs/TB1i_sRbO_1gK0jSZFqXXcpaXXa-300-300.jpg" class="center-block sub-listing-img" style="object-fit: contain; width: 100%;">
+            </a><br>
+            <h6 class="text-center mxt-60">Backpacks </h6>
+        </div>
+        <div class="col-xs-6">
+            <a href="#">
+                <img src="https://gw.alicdn.com/tfs/TB1wQETbHH1gK0jSZFwXXc7aXXa-300-300.jpg" class="center-block sub-listing-img" style="object-fit: contain; width: 100%;"><br>
+            </a>
+            <h6 class="text-center mxt-60">Messenger Bags </h6>
+        </div>
+
+        <div class="col-xs-12">
+            <hr class="hr-margin">
+        </div>
+
+        <div class="col-xs-6">
+            <a href="#">
+                <img src="https://gw.alicdn.com/tfs/TB1KU3SbQL0gK0jSZFxXXXWHVXa-300-300.jpg" class="center-block sub-listing-img" style="object-fit: contain; width: 100%;">
+            </a><br>
+            <h6 class="text-center mxt-60">Wallets </h6>
+        </div>
+
+    </div>-->
+        
+
+</div>
+
+
+</div>
+
+
+
+<!-- scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+    // Make the DIV element draggable:
+dragElement(document.getElementById("drag"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "dragImg")) {
+    // if present, the header is where you move the DIV from:
+    document.getElementById(elmnt.id + "dragImg").onmousedown = dragMouseDown;
+  } else {
+    // otherwise, move the DIV from anywhere inside the DIV:
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    // stop moving when mouse button is released:
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+    /*function category1() {
+        var x = document.getElementById("category1");
+        if (x.style.display === "none") {
+            x.style.display = "block";   
+        } else {
+            x.style.display = "none";
+        }
+    }*/
+
+    function firstCatOpen() {
+        document.getElementById('firstcat').style.display = "block";
+        document.getElementById('secondcat').style.display = "none";
+        document.getElementById('thirdcat').style.display = "none";
+        document.getElementById('fourthcat').style.display = "none";
+        document.getElementById('fifthcat').style.display = "none";
+        document.getElementById('sixthcat').style.display = "none";
+        document.getElementById('seventhcat').style.display = "none";
+        document.getElementById('eightcat').style.display = "none";
+    }
+
+        function secondCatOpen() {
+        document.getElementById('firstcat').style.display = "none";
+        document.getElementById('secondcat').style.display = "block";
+        document.getElementById('thirdcat').style.display = "none";
+        document.getElementById('fourthcat').style.display = "none";
+        document.getElementById('fifthcat').style.display = "none";
+        document.getElementById('sixthcat').style.display = "none";
+        document.getElementById('seventhcat').style.display = "none";
+        document.getElementById('eightcat').style.display = "none";
+    }
+
+        function thirdCatOpen() {
+        document.getElementById('firstcat').style.display = "none";
+        document.getElementById('secondcat').style.display = "none";
+        document.getElementById('thirdcat').style.display = "block";
+        document.getElementById('fourthcat').style.display = "none";
+        document.getElementById('fifthcat').style.display = "none";
+        document.getElementById('sixthcat').style.display = "none";
+        document.getElementById('seventhcat').style.display = "none";
+        document.getElementById('eightcat').style.display = "none";
+    }
+        function fourthCatOpen() {
+        document.getElementById('firstcat').style.display = "none";
+        document.getElementById('secondcat').style.display = "none";
+        document.getElementById('thirdcat').style.display = "none";
+        document.getElementById('fourthcat').style.display = "block";
+        document.getElementById('fifthcat').style.display = "none";
+        document.getElementById('sixthcat').style.display = "none";
+        document.getElementById('seventhcat').style.display = "none";
+        document.getElementById('eightcat').style.display = "none";
+    }
+        function fifthCatOpen() {
+        document.getElementById('firstcat').style.display = "none";
+        document.getElementById('secondcat').style.display = "none";
+        document.getElementById('thirdcat').style.display = "none";
+        document.getElementById('fourthcat').style.display = "none";
+        document.getElementById('fifthcat').style.display = "block";
+        document.getElementById('sixthcat').style.display = "none";
+        document.getElementById('seventhcat').style.display = "none";
+        document.getElementById('eightcat').style.display = "none";
+    }
+        function sixthCatOpen() {
+        document.getElementById('firstcat').style.display = "none";
+        document.getElementById('secondcat').style.display = "none";
+        document.getElementById('thirdcat').style.display = "none";
+        document.getElementById('fourthcat').style.display = "none";
+        document.getElementById('fifthcat').style.display = "none";
+        document.getElementById('sixthcat').style.display = "block";
+        document.getElementById('seventhcat').style.display = "none";
+        document.getElementById('eightcat').style.display = "none";
+    }
+        /*function seventhCatOpen() {
+        document.getElementById('firstcat').style.display = "none";
+        document.getElementById('secondcat').style.display = "none";
+        document.getElementById('thirdcat').style.display = "none";
+        document.getElementById('fourthcat').style.display = "none";
+        document.getElementById('fifthcat').style.display = "none";
+        document.getElementById('sixthcat').style.display = "none";
+        document.getElementById('seventhcat').style.display = "block";
+        document.getElementById('eightcat').style.display = "none";
+    }*/
+        /*function eightCatOpen() {
+        document.getElementById('firstcat').style.display = "none";
+        document.getElementById('secondcat').style.display = "none";
+        document.getElementById('thirdcat').style.display = "none";
+        document.getElementById('fourthcat').style.display = "none";
+        document.getElementById('fifthcat').style.display = "none";
+        document.getElementById('sixthcat').style.display = "none";
+        document.getElementById('seventhcat').style.display = "none";
+        document.getElementById('eightcat').style.display = "block";
+    }*/
+
+</script>
+
+
