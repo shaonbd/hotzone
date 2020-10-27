@@ -36,13 +36,10 @@
     .lzd-act-richtext img {
         position: relative !important;
         top: 0% !important;
-        border-radius: 100% !important;
-        border: 2px solid #e1e1e1 !important;
-        margin-bottom: 3px !important;
     }
 
     .div-list-main {
-        padding-left: 20px !important;
+        padding-left: 17px !important;
         padding-right: 0 !important;
         list-style: none !important;
         margin-left: -15% !important;
@@ -65,7 +62,7 @@
         margin-right: 7.5px !important;
         box-shadow: rgba(0, 0, 0, 0.11) 0px 0.96px 4.8px 0px !important;
         float: right!important;
-        width: 40px !important;
+        width: 50px !important;
     }
 
     .sub-listing-img{
@@ -142,6 +139,11 @@
         margin-bottom: 0rem !important;
     }
 
+    .cat-span{
+        color: white;
+        font-weight: 600;
+    }
+
     .df-main-div {
         position: absolute !important;
     }
@@ -204,10 +206,9 @@
         top: 8%;
         
     }
-    #draggable { 
+#draggable { 
   cursor:move;
-  height: 150px;
-  padding: 1em;
+  height: 580px;
   width: 300px;
   text-align:center;
 }
@@ -220,33 +221,33 @@
         }
     }
 </style>
-<div id="category1" style="position: fixed !important; z-index: 999 !important;background: #f9f9f9 !important; top:0;left:0;height: 100% !important;overflow-y: scroll !important; width: 100% !important;font-family: 'Montserrat', sans-serif !important;">
-    <div class="col-xs-5 list-group" style="height: 100%; overflow: scroll;">
-        <ul class="div-list-main">
+<div id="category1" style="position: fixed !important; z-index: 999 !important; background: #f9f9f9 !important; top:0; left:0;height: 100% !important; width: 100% !important;font-family: 'Montserrat', sans-serif !important;">
+    <div class="col-xs-5 list-group" style="height: 100%;">
+        <ul class="div-list-main" style="padding-left: 33px!important;">
             <li class="main-listing list-group-item list-group-item-action" style="border: none;"><span></span></li>
-            <li class="main-listing list-group-item list-group-item-action" style="background-color: #d3e2bd" id="firstlist" onclick="firstCatOpen()">
-                <img class="main-listing-img" src="https://gw.alicdn.com/tfs/TB1pUsQbUz1gK0jSZLeXXb9kVXa-300-300.jpg" style="width: 24px;margin-top: -8%;">
-                <span>Mega Deals</span>
+            <li class="main-listing list-group-item list-group-item-action" style="background-color: #6700b6" id="firstlist" onclick="firstCatOpen()">
+                <img class="main-listing-img" src="https://img.alicdn.com/tfs/TB1aiRi0uL2gK0jSZPhXXahvXXa-300-300.jpg" style="width: 24px;margin-top: -8%;">
+                <span class="cat-span">Payment Discount</span>
             </li>
-            <li class="main-listing list-group-item list-group-item-action" style="background-color: #d3e2e0" id="secondlist" onclick="secondCatOpen()">
-                <img class="main-listing-img" src="https://gw.alicdn.com/tfs/TB1uWgRbQP2gK0jSZPxXXacQpXa-300-300.jpg" style="width: 24px;margin-top: -12px;">
-                <span>Category Exclusives</span>
+            <li class="main-listing list-group-item list-group-item-action" style="background-color: #8100ba" id="secondlist" onclick="secondCatOpen()">
+                <img class="main-listing-img" src="https://img.alicdn.com/tfs/TB174NB0Br0gK0jSZFnXXbRRXXa-300-300.jpg" style="width: 24px;margin-top: -12px;">
+                <span class="cat-span">Event Partners</span>
             </li>
-            <li class="main-listing list-group-item list-group-item-action" style="background-color: #d2bfbd" id="thirdlist" onclick="thirdCatOpen()">
-                <img class="main-listing-img" src="https://gw.alicdn.com/tfs/TB1IGETbQT2gK0jSZFkXXcIQFXa-300-300.jpg" style="width: 24px;margin-top: -10px;">
-                <span>Offers You Can't Miss</span>
+            <li class="main-listing list-group-item list-group-item-action" style="background-color: #91049d" id="thirdlist" onclick="thirdCatOpen()">
+                <img class="main-listing-img" src="https://img.alicdn.com/tfs/TB1oRtq0AL0gK0jSZFAXXcA9pXa-300-300.jpg" style="width: 24px;margin-top: -10px;">
+                <span class="cat-span">11.11 Lineup</span>
             </li>
-            <li class="main-listing list-group-item list-group-item-action" style="background-color: #bae1bd;" id="fourthlist" onclick="fourthCatOpen()">
-                <img class="main-listing-img" src="https://gw.alicdn.com/tfs/TB17bERbNz1gK0jSZSgXXavwpXa-300-300.jpg" style="width: 24px;margin-top: -10px;">
-                <span>We Care of Your Savings</span>
+            <li class="main-listing list-group-item list-group-item-action" style="background-color: #ac00b7;" id="fourthlist" onclick="fourthCatOpen()">
+                <img class="main-listing-img" src="https://img.alicdn.com/tfs/TB1eP7FnSR26e4jSZFEXXbwuXXa-300-300.jpg" style="width: 24px;margin-top: -10px;">
+                <span class="cat-span">Ludo Tournament</span>
             </li>
-            <li class="main-listing list-group-item list-group-item-action" style="background-color: #f0e4be;" id="fifthlist" onclick="fifthCatOpen()">
-                <img class="main-listing-img" src="https://gw.alicdn.com/tfs/TB1FbsRbSf2gK0jSZFPXXXsopXa-300-300.jpg" style="width: 24px;margin-top: -10px;">
-                <span>Hot Deals</span>
+            <li class="main-listing list-group-item list-group-item-action" style="background-color: #c100b9;" id="fifthlist" onclick="fifthCatOpen()">
+                <img class="main-listing-img" src="https://img.alicdn.com/tfs/TB1RG0h0rY1gK0jSZTEXXXDQVXa-300-300.jpg" style="width: 24px;margin-top: -10px;">
+                <span class="cat-span">Double Taka</span>
             </li>
-            <li class="main-listing list-group-item list-group-item-action" style="background-color: #e0e2ff;" id="sixthlist" onclick="sixthCatOpen()">
-                <img class="main-listing-img" src="https://gw.alicdn.com/tfs/TB1fUESbQT2gK0jSZPcXXcKkpXa-300-300.jpg" style="width: 24px;margin-top: -10px;">
-                <span>Top Selling</span>
+            <li class="main-listing list-group-item list-group-item-action" style="background-color: #b202b5;" id="sixthlist" onclick="sixthCatOpen()">
+                <img class="main-listing-img" src="https://img.alicdn.com/tfs/TB1Adhj0Ez1gK0jSZLeXXb9kVXa-300-300.jpg" style="width: 24px;margin-top: -10px;">
+                <span class="cat-span">1 Taka Game</span>
             </li>
             <!--<li class="main-listing list-group-item list-group-item-action" id="seventhlist" onclick="seventhCatOpen()">
                 <img class="main-listing-img" src="https://gw.alicdn.com/tfs/TB1Z3.RbQY2gK0jSZFgXXc5OFXa-300-300.jpg" style="width: 24px;margin-top: -10px;">
@@ -263,34 +264,32 @@
 
 
     <!--first Category -->
-    <div class="col-xs-7" id="firstcat" style="display: show; padding-left: 1px; padding-right: 0px;">
+    <div class="col-xs-7" id="firstcat" style="display: show; padding-left: 1px; padding-right: 0px;" id="drag">
 
         <div class="">
             <br>
-            <span class="pull-left" style="font-size: 10px;cursor: pointer;font-weight:600 !important;">Mega Deals </span>
+            <span class="pull-left" style="font-size: 10px;cursor: pointer;font-weight:600 !important;">Payment Discount </span>
             <a href="#">
                 <span class="pull-right" style="font-size: 10px;cursor: pointer;color: #3ec251 !important;font-weight:600;">&gt;&gt; See More</span>
             </a>
         </div>
 
-        <div class="col-xs-12" style="margin-bottom: -22.5px;">
+        <div class="col-xs-12" style="margin-bottom: -35.5px; padding-bottom: 15px;">
             <hr class="hr-margin">
         </div>
 
 
-        <div class="col-xs-12" style="overflow-y: scroll !important; width: 100% !important;">
+        <div class="col-xs-12" style="overflow-y: scroll !important; width: 100% !important; padding-right: 5px!important" id="draggable">
             <ul class="div-list-main">
-            <li class="main-listing list-group-item list-group-item-action cat-one">
+            <li class="main-listing list-group-item-action cat-one">
                 <a href="#">
-                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1RCgTbG61gK0jSZFlXXXDKFXa-300-300.jpg" style="width: 24px;">
-                <h5 class="">Phones & Accessories</h5>
+                <img src="https://img.alicdn.com/tfs/TB19LOpZUz1gK0jSZLeXXb9kVXa-500-250.png" style="width: 100%;">
             </a>
             </li>
-            <li class="main-listing list-group-item list-group-item-action cat-one">
+            <li class="main-listing list-group-item-action cat-one">
                 <a href="#">
-                <img class="main-listing-img-right" src="https://gw.alicdn.com/tfs/TB1vrIRbNz1gK0jSZSgXXavwpXa-300-300.jpg" style="width: 24px;">
-                <h5 class="">TV, Audio, Cameras & Gaming</h5>
-            </a>
+                <img src="https://img.alicdn.com/tfs/TB1MqmFZNv1gK0jSZFFXXb0sXXa-500-250.png" style="width: 100%;">
+                </a>
             </li>
             <li class="main-listing list-group-item list-group-item-action cat-one">
                 <a href="#">
@@ -373,21 +372,21 @@
 
 
     <!--Second Category -->
-    <div class="col-xs-7 fixed" id="secondcat" style="display: none; padding-left: 1px; padding-right: 0px;">
+    <div class="col-xs-7 fixed" id="secondcat" style="display: none; padding-left: 1px; padding-right: 0px;" id="drag">
 
         <div class="">
             <br>
-            <span class="pull-left" style="font-size: 10px;cursor: pointer;font-weight:600 !important;">Category Exclusives</span>
+            <span class="pull-left" style="font-size: 10px;cursor: pointer;font-weight:600 !important;">Event Partners</span>
             <a href="#">
                 <span class="pull-right" style="font-size: 10px;cursor: pointer;color: #3ec251 !important;font-weight:600;">&gt;&gt; See More</span>
             </a>
         </div>
 
-        <div class="col-xs-12" style="margin-bottom: -22.5px;">
+        <div class="col-xs-12" style="margin-bottom: -35.5px; padding-bottom: 15px;">
             <hr class="hr-margin">
         </div>
 
-        <div class="col-xs-12" style="overflow-y: scroll !important; width: 100% !important;">
+        <div class="col-xs-12" style="overflow-y: scroll !important; width: 100% !important; padding-right: 5px!important" id="draggable">
             <ul class="div-list-main">
             <li class="main-listing list-group-item list-group-item-action cat-two">
                 <a href="#">
@@ -480,21 +479,21 @@
 
 
     <!--third Category -->
-    <div class="col-xs-7 fixed" id="thirdcat" style="display: none; padding-left: 1px; padding-right: 0px;">
+    <div class="col-xs-7 fixed" id="thirdcat" style="display: none; padding-left: 1px; padding-right: 0px;" id="drag">
 
         <div class="">
             <br>
-            <span class="pull-left" style="font-size: 10px;cursor: pointer;font-weight:600 !important;">Offers You Can't Miss</span>
+            <span class="pull-left" style="font-size: 10px;cursor: pointer;font-weight:600 !important;">11.11 Lineup</span>
             <a href="#">
                 <span class="pull-right" style="font-size: 10px;cursor: pointer;color: #3ec251 !important;font-weight:600;">&gt;&gt; See More</span>
             </a>
         </div>
 
-        <div class="col-xs-12" style="margin-bottom: -22.5px;">
+        <div class="col-xs-12" style="margin-bottom: -35.5px; padding-bottom: 15px;">
             <hr class="hr-margin">
         </div>
 
-        <div class="col-xs-12" style="overflow-y: scroll !important; width: 100% !important;">
+        <div class="col-xs-12" style="overflow-y: scroll !important; width: 100% !important; padding-right: 5px!important" id="draggable">
             <ul class="div-list-main">
             <li class="main-listing list-group-item list-group-item-action cat-three">
                 <a href="#">
@@ -563,11 +562,11 @@
 
 
     <!--fourth Category -->
-    <div class="col-xs-7 fixed" id="fourthcat" style="display: none; padding-left: 1px; padding-right: 0px;">
+    <div class="col-xs-7 fixed" id="fourthcat" style="display: none; padding-left: 1px; padding-right: 0px;" id="drag">
 
         <div class="">
             <br>
-            <span class="pull-left" style="font-size: 10px;cursor: pointer;font-weight:600 !important;">We Care for your savings</span>
+            <span class="pull-left" style="font-size: 10px;cursor: pointer;font-weight:600 !important;">Ludo Tournament</span>
             <a href="#">
                 <span class="pull-right" style="font-size: 10px;cursor: pointer;color: #3ec251 !important;font-weight:600;">&gt;&gt; See More</span>
             </a>
@@ -610,20 +609,20 @@
 
 
     <!--fifth Category -->
-    <div class="col-xs-7 fixed" id="fifthcat" style="display: none; padding-left: 1px; padding-right: 0px;">
+    <div class="col-xs-7 fixed" id="fifthcat" style="display: none; padding-left: 1px; padding-right: 0px;" id="drag">
         <div class="">
             <br>
-            <span class="pull-left" style="font-size: 10px;cursor: pointer;font-weight:600 !important;">Hot Deals</span>
+            <span class="pull-left" style="font-size: 10px;cursor: pointer;font-weight:600 !important;">Double Taka </span>
             <a href="#">
                 <span class="pull-right" style="font-size: 10px;cursor: pointer;color: #3ec251 !important;font-weight:600;">&gt;&gt; See More</span>
             </a>
         </div>
 
-        <div class="col-xs-12" style="margin-bottom: -22.5px;">
+        <div class="col-xs-12" style="margin-bottom: -35.5px; padding-bottom: 15px;">
             <hr class="hr-margin">
         </div>
 
-        <div class="col-xs-12" style="overflow-y: scroll !important; width: 100% !important;">
+        <div class="col-xs-12" style="overflow-y: scroll !important; width: 100% !important; padding-right: 5px!important" id="draggable">
             <ul class="div-list-main">
             <li class="main-listing list-group-item list-group-item-action cat-five">
                 <a href="#">
@@ -674,11 +673,11 @@
 
 
     <!--Sixth Category -->
-    <div class="col-xs-7 fixed" id="sixthcat" style="display: none; padding-left: 1px; padding-right: 0px;">
+    <div class="col-xs-7 fixed" id="sixthcat" style="display: none; padding-left: 1px; padding-right: 0px;" id="drag">
 
         <div class="">
             <br>
-            <span class="pull-left" style="font-size: 10px;cursor: pointer;font-weight:600 !important;">Top Selling</span>
+            <span class="pull-left" style="font-size: 10px;cursor: pointer;font-weight:600 !important;">1 Taka Game</span>
             <a href="#">
                 <span class="pull-right" style="font-size: 10px;cursor: pointer;color: #3ec251 !important;font-weight:600;">&gt;&gt; See More</span>
             </a>
@@ -688,7 +687,7 @@
             <hr class="hr-margin">
         </div>
 
-        <div class="col-xs-12" style="overflow-y: scroll !important; width: 100% !important;">
+        <div class="col-xs-12" style="overflow-y: scroll !important; width: 100% !important;" id="draggable">
             <div class="col-xs-6">
             <a href="#">
                 <img src="https://gw.alicdn.com/tfs/TB1RCgTbG61gK0jSZFlXXXDKFXa-300-300.jpg" class="center-block sub-listing-img" style="object-fit: contain; width: 100%;">
