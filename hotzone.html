@@ -208,8 +208,8 @@
     }
 #draggable { 
   cursor:move;
-  height: 580px;
   width: 300px;
+  height: calc(100vh - 50px);
   text-align:center;
 }
     @media(min-width: 768px) {
@@ -221,7 +221,13 @@
         }
     }
 </style>
+<div class="col-xs-12">
+        <img src="https://img.alicdn.com/tfs/TB1gnHOqaNj0u4jSZFyXXXgMVXa-750-200.jpg" style="width: 100%;">
+    </div>
 <div id="category1" style="position: fixed !important; z-index: 999 !important; background: #f9f9f9 !important; top:0; left:0;height: 100% !important; width: 100% !important;font-family: 'Montserrat', sans-serif !important;">
+    <div class="col-xs-12">
+        <img src="https://img.alicdn.com/tfs/TB1gnHOqaNj0u4jSZFyXXXgMVXa-750-200.jpg" style="width: 100%;">
+    </div>
     <div class="col-xs-5 list-group" style="height: 100%;">
         <ul class="div-list-main" style="padding-left: 33px!important;">
             <li class="main-listing list-group-item list-group-item-action" style="border: none;"><span></span></li>
@@ -690,13 +696,13 @@
         <div class="col-xs-12" style="overflow-y: scroll !important; width: 100% !important;" id="draggable">
             <div class="col-xs-6">
             <a href="#">
-                <img src="https://gw.alicdn.com/tfs/TB1RCgTbG61gK0jSZFlXXXDKFXa-300-300.jpg" class="center-block sub-listing-img" style="object-fit: contain; width: 100%;">
+                <img src="https://img.alicdn.com/tfs/TB1y7pXqvzO3e4jSZFxXXaP_FXa-300-300.png" class="center-block sub-listing-img" style="object-fit: contain; width: 100%;">
             </a><br>
             <h6 class="text-center mxt-60">Phones & Accessories </h6>
         </div>
         <div class="col-xs-6">
             <a href="#">
-                <img src="https://gw.alicdn.com/tfs/TB1vrIRbNz1gK0jSZSgXXavwpXa-300-300.jpg" class="center-block sub-listing-img" style="object-fit: contain; width: 100%;"><br>
+                <img src="https://img.alicdn.com/tfs/TB1y7pXqvzO3e4jSZFxXXaP_FXa-300-300.png" class="center-block sub-listing-img" style="object-fit: contain; width: 100%;"><br>
             </a>
             <h6 class="text-center mxt-60">TV, Audio, Cameras & gaming</h6>
         </div>
@@ -706,13 +712,13 @@
 
         <div class="col-xs-6">
             <a href="#">
-                <img src="https://gw.alicdn.com/tfs/TB1YyZTbUY1gK0jSZFCXXcwqXXa-300-300.jpg" class="center-block sub-listing-img" style="object-fit: contain; width: 100%;">
+                <img src="https://img.alicdn.com/tfs/TB1y7pXqvzO3e4jSZFxXXaP_FXa-300-300.png" class="center-block sub-listing-img" style="object-fit: contain; width: 100%;">
             </a><br>
             <h6 class="text-center mxt-60">Home Appliances</h6>
         </div>
         <div class="col-xs-6">
             <a href="#">
-                <img src="https://gw.alicdn.com/tfs/TB1C5wTbND1gK0jSZFKXXcJrVXa-300-300.jpg" class="center-block sub-listing-img" style="object-fit: contain; width: 100%;">
+                <img src="https://img.alicdn.com/tfs/TB1y7pXqvzO3e4jSZFxXXaP_FXa-300-300.png" class="center-block sub-listing-img" style="object-fit: contain; width: 100%;">
             </a><br>
             <h6 class="text-center mxt-60">Computers, Laptops & Accessories</h6>
         </div>
@@ -894,6 +900,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <script type="text/javascript">
 
+
+
     // Make the DIV element draggable:
 dragElement(document.getElementById("drag"));
 
@@ -1028,6 +1036,9 @@ function dragElement(elmnt) {
         document.getElementById('seventhcat').style.display = "none";
         document.getElementById('eightcat').style.display = "block";
     }*/
+
+    
+    
 
 </script>
 
